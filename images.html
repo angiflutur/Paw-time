@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Paw time</title>
+    <link rel="stylesheet" href="images.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="intro.html"><img src="imagini/logo2.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <span class="fa fa-times" onclick="hideMenu()"></span>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="health.html">DOG HEALTH & CARE</a></li>
+            <li><a href="breeds.html">TOP BREEDS</a></li>
+            <li><a href="images.html">IMAGES</a></li>
+          </ul>
+        </div>
+        <span class="fa fa-bars" onclick="showMenu()"></span>
+      </nav>
+
+      <div class="text-box">
+        <h1>It's paw time</h1>
+        <p>
+          "If you don't own a dog, at least one, there may not necessarily be
+          anything <br />wrong with you, but there may be something wrong with
+          your life." <br />- Roger Caras -
+        </p>
+      </div>
+      
+    </section>
+    <div class="continut">
+		<center>
+			<h1> Introduceti poze.</h2>
+		</center>
+
+		<br><br>
+
+		<input id="name" placeholder="Name">
+		<input id="url" placeholder="Image URL">
+		<button id="addphoto" onclick="addphoto()">Add</button>
+		<button id="updatephoto" onclick="updatephoto()">Update</button>
+		<br>
+		<br>
+		<script src="script.js"></script>
+
+		<div class="imagini">
+		</div>
+
+		<br />
+		<p>&nbsp; </p>
+
+		<hr />
+	</div>
+	<script src="images.js"></script>
+    
+    <!--JS inchidere/deschidere-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
